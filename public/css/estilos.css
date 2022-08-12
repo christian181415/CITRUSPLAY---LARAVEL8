@@ -1,0 +1,103 @@
+body{
+    background: #fff;
+    padding: 0.5%;
+    margin: 0.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+.infotable th, .infotable td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 15px;
+}
+  
+.infotable{
+    width: 100%;
+}
+.infotable th{
+    background: #000;
+    color: #fff;
+}
+
+.loginform{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+footer{
+	background: #007BFF;
+	color:#fff;
+	padding: 20px 0px 5px 5px;
+	margin-top: 20px;
+}
+.error{
+	color: red;
+	font-style: italic;
+}
+
+input#photo {
+    width: 260px;
+}
+
+img.showimg{
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+.allpage{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.flex-container{
+    width: 100%;
+}
+
+.PanelControl{
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width:600px) {
+    .allpage table{
+        width: 100%;
+    }
+    .allpage thead{
+        display: none;
+    }
+    .allpage tr:nth-of-type(2n){
+        background-color: inherit;
+    }
+    .allpage tr td:first-child{
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .allpage tbody td{
+        display: block;
+        text-align: center;
+    }
+    .allpage tbody td:before{
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+    }
+    .allpage tbody th{
+        display: block;
+        text-align: center;
+    }
+    .allpage tbody th:before{
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+    }
+}
